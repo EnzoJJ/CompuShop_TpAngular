@@ -1,59 +1,44 @@
 # CompuShop
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+##Temática
 
-## Development server
+**CompuShop** es una tienda online de hardware para computadoras.  
+Permite a los usuarios navegar por distintas categorías de productos como **procesadores**, **placas madre**, **memorias RAM** y **coolers**, agregar productos a un carrito de compras y simular una compra enviando un pedido.  
+El proyecto muestra conceptos muy importantes de **Angular**, incluyendo **ruteo**, **componentes**, **servicios**, **consumo de API externa**, **interacción con formularios** y **uso de directivas estructurales**.
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## Principales funcionalidades:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Visualizacion de productos por categoría.
+- Filtro dinamico de productos.
+- Agregar productos al carrito.
+- Simulación de compra con POST a una **API externa** (MockAPI).
+- Visualizacion de pedidos realizados (GET).
+- **Componentes reutilizables**.
+- Footer fijo al final de la página.
+- Diseño adaptado para buena experiencia de usuario.
 
-## Code scaffolding
+## Mis Datos:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Nombre:** Enzo Joaquin Jatip
+- **DNI:** 44932530
+- **Sede:** Tandil
+- **Correo:** enzojatip@gmail.com
 
-```bash
-ng generate component component-name
-```
+## Tecnologías utilizadas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Angular**
+- **TypeScript**
+- **HTML & CSS**
+- **MockAPI** (para simular backend)
 
-```bash
-ng generate --help
-```
+## Objetivo del proyecto
 
-## Building
+Ruteo con múltiples secciones  
+Componentes y comunicacion entre ellos  
+Interfaces tipadas  
+Directivas `*ngIf` y `*ngFor`  
+Consumo de API externa con métodos `GET` y `POST`  
 
-To build the project run:
+**¡Gracias por ver mi trabajo!**
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
