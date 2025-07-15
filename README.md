@@ -9,11 +9,11 @@ El proyecto muestra conceptos muy importantes de **Angular**, incluyendo **ruteo
 
 ## Principales funcionalidades:
 
-- Visualizacion de productos por categoría.
-- Filtro dinamico de productos.
+- Visualizacion de productos por categoría(/productos).
+- Filtro dinamico de productos(/productos).
 - Agregar productos al carrito.
 - Simulación de compra con POST a una **API externa** (MockAPI).
-- Visualizacion de pedidos realizados (GET).
+- Visualizacion de pedidos realizados (GET).(/pedidos)
 - **Componentes reutilizables**.
 - Footer fijo al final de la página.
 - Diseño adaptado para buena experiencia de usuario.
