@@ -1,6 +1,6 @@
 # CompuShop
 
-##Temática
+Temática
 
 **CompuShop** es una tienda online de hardware para computadoras.  
 Permite a los usuarios navegar por distintas categorías de productos como **procesadores**, **placas madre**, **memorias RAM** y **coolers**, agregar productos a un carrito de compras y simular una compra enviando un pedido.  
