@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  background-color: #122c4f;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  width: 90%;
+  height: 30rem;
+  margin: 0px 10px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  cursor: pointer;
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
+}
+
+#procesadores,
+#mother,
+#ram,
+#cooler {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  height: 20rem;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#procesadores::before,
+#mother::before,
+#ram::before,
+#cooler::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+  transition: filter 0.3s ease;
+  z-index: 0;
+}
+
+#procesadores:hover::before,
+#mother:hover::before,
+#ram:hover::before,
+#cooler:hover::before {
+  filter: brightness(60%);
+}
+
+#procesadores span,
+#mother span,
+#ram span,
+#cooler span {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+#procesadores::before {
+  background-image: url('/assets/intel-amd.jpeg');
+}
+
+#mother::before {
+  background-image: url('/assets/mother.webp');
+}
+
+#ram::before {
+  background-image: url('/assets/ram.webp');
+}
+
+#cooler::before {
+  background-image: url('/assets/cooler.jpg');
+}
+
+.categories button:hover {
+  transform: scale(1.05);
+}
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fbf9e4;
+}
+

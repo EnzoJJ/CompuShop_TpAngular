@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<section class="carousel">
+  <img src="/assets/oferta1.jpg" alt="Oferta AMD" />
+  <img src="/assets/oferta2.jpg" alt="Oferta Intel" />
+  <img src="/assets/oferta3.jpg" alt="Oferta Intel" />
+</section>
+
+<section class="categories">
+  <div class="buttons-container">
+    <button id="procesadores" (click)="filtrarCategoria('microprocesadores')">
+      <span>Procesadores</span>
+    </button>
+    <button id="mother" (click)="filtrarCategoria('motherboards')">
+      <span>Motherboards</span>
+    </button>
+    <button id="ram" (click)="filtrarCategoria('memorias ram')">
+      <span>Memorias RAM</span>
+    </button>
+    <button id="cooler" (click)="filtrarCategoria('coolers')">
+      <span>Coolers</span>
+    </button>
+  </div>
+</section>

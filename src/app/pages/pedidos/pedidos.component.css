@@ -1,0 +1,29 @@
+.pedidos{
+    width: 80%;
+    margin-left: 10%;
+}
+.pedido {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+}
+
+.productos-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.productos-lista li {
+  margin-bottom: 4px;
+}
+h2{
+  text-align: left;
+  font-size: 3rem;
+  color: #fbf9e4;
+  margin: 50px auto 20px auto;
+  max-width: 85%;
+  border-bottom: 1px solid white;
+
+}

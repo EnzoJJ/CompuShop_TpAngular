@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<h2>Lista de pedidos</h2>
+
+<div class="pedidos" *ngIf="pedidos && pedidos.length > 0; else sinPedidos">
+  <div class="pedido" *ngFor="let pedido of pedidos">
+    <h3>Pedido {{pedido.id}}</h3>
+    <ul class="productos-lista">
+      <li *ngFor="let producto of pedido.productos">
+        <strong>{{ producto.nombre }}</strong> — Cantidad: {{ producto.cantidad }}
+      </li>
+    </ul>
+    <p><strong>Fecha:</strong> {{ pedido.fecha | date: 'short' }}</p>
+    <p><strong>Total:</strong> ${{ pedido.total | number:'1.2-2' }}</p>
+  </div>
+</div>
+
+<ng-template #sinPedidos>
+  <p>No hay pedidos todavía.</p>
+</ng-template>

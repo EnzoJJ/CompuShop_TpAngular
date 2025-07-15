@@ -1,0 +1,22 @@
+
+<article class="prod-card">
+  <img [src]="producto.img" alt="{{ producto.nombre }}">
+  <h3 class="title"><span>{{ producto.nombre }}</span></h3>
+  <p class="price">${{ producto.precio }}</p>
+
+  <div class="cantidad-selector">
+    <button (click)="decrementarCantidad()">-</button>
+    <input type="number" [(ngModel)]="cantidad" [min]="1" [max]="producto.stock">
+    <button (click)="incrementarCantidad()">+</button>
+  </div>
+
+  <span *ngIf="producto.stock > 0" class="stock in-stock">En stock</span>
+  <span *ngIf="producto.stock === 0" class="stock out-of-stock">Sin stock</span>
+
+  <button
+    class="btn-agregar"
+    (click)="agregarProducto()"
+    [disabled]="producto.stock === 0">
+    Agregar al carrito
+  </button>
+</article>

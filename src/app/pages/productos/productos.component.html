@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<h2 *ngIf="categoriaActual; else todos">
+  {{ categoriaActual | titlecase }}
+</h2>
+<ng-template #todos>
+  <h2>Todos los productos</h2>
+</ng-template>
+
+<section id="prod-page">
+  <ul class="lista-prod">
+    <li *ngFor="let producto of productosFiltrados; trackBy: trackById">
+      <app-card-producto
+        [producto]="producto"
+        (agregar)="agregarAlCarrito($event)">
+      </app-card-producto>
+    </li>
+  </ul>
+
+  <article id="carrito">
+    <h2>Carrito</h2>
+    <ul class="lista-carrito">
+      <li *ngFor="let item of carrito">
+        <img class="img-carrito" [src]="item.producto.img" alt="{{ item.producto.nombre }}">
+        <span *ngIf="item.cantidad">x{{ item.cantidad }}</span>
+        <span>{{ item.producto.nombre }}</span>
+        <span class="precio-carrito">${{ item.producto.precio }}</span>
+      </li>
+    </ul>
+    <div class="total">
+      Total: ${{ total }}
+    </div>
+  <button class="btn-comprar" (click)="finalizarCompra()">Comprar</button>
+  <div *ngIf="mostrarMensaje" class="toast-mensaje">
+  {{ mensaje }}
+</div>
+  </article>
+</section>

@@ -1,0 +1,112 @@
+.prod-card {
+  background: #fcffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 350px;
+}
+
+.prod-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.prod-card img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.prod-card .title {
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.prod-card .title span {
+  display: inline-block;
+  white-space: nowrap;
+  transition: transform 10s linear;
+}
+
+
+.prod-card:hover .title span {
+  transform: translateX(-50%);
+}
+
+.prod-card .price {
+  margin-top: -15px;
+  color: #5b88b2;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn-agregar {
+  background-color: #ff3c00;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.753);
+  width: 50%;
+  height: 2.5rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-agregar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.stock {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.in-stock {
+  color: #2e7d32;
+}
+
+.out-of-stock {
+  color: #c62828;
+}
+
+.btn-agregar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.cantidad-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cantidad-selector button {
+  background-color: #5b88b2;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cantidad-selector input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+}
+

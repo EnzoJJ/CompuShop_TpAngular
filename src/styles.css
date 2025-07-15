@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: #122c4f;
+    overflow-x: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.site-footer {
+  background: #000000; /* Color principal */
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.site-footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer p {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffcc00; /* Amarillo para destacar */
+}
