@@ -28,7 +28,7 @@ export class ProductosComponent implements OnInit {
   ngOnInit() {
   this.route.queryParams.subscribe(params => {
     const categoria = params['categoria'];
-    console.log('Categoría recibida:', categoria);
+    console.log('Categoria recibida:', categoria);
 
     this.productosService.obtenerProductos().subscribe((productos) => {
       if (categoria) {
@@ -95,7 +95,7 @@ export class ProductosComponent implements OnInit {
     this.pedidosService.crearOrden(orden).subscribe({
       next: (nuevaOrden) => {
         console.log('Orden guardada:', nuevaOrden);
-        this.mostrar('Compra realizada con éxito!');
+        this.mostrar('Compra realizada con exito!');
         this.carrito = [];
         this.total = 0;
       },

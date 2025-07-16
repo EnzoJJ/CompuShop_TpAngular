@@ -13,7 +13,7 @@ ul{
     list-style-type: none;
 }
 .site-footer {
-  background: #000000; /* Color principal */
+  background: #000000;
   color: #ffffff;
   padding: 30px 20px;
   text-align: center;
@@ -45,5 +45,5 @@ ul{
 }
 
 .footer-nav a:hover {
-  color: #ffcc00; /* Amarillo para destacar */
+  color: #ffcc00;
 }

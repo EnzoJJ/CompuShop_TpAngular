@@ -26,7 +26,7 @@ export class ProductosService {
 
 }
 
-
+//Carga de datos locales, por si no funciona la api
 /*constructor(private http: HttpClient) {
     this.productos = [
       {
